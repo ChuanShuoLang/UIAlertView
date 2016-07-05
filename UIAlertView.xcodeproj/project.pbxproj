@@ -13,8 +13,10 @@
 		D2F283531D2521CB002EE004 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F283511D2521CB002EE004 /* Main.storyboard */; };
 		D2F283551D2521CB002EE004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2F283541D2521CB002EE004 /* Assets.xcassets */; };
 		D2F283581D2521CB002EE004 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F283561D2521CB002EE004 /* LaunchScreen.storyboard */; };
-		D2F283631D2521CB002EE004 /* UIAlertViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F283621D2521CB002EE004 /* UIAlertViewTests.m */; };
 		D2F2836E1D2521CB002EE004 /* UIAlertViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F2836D1D2521CB002EE004 /* UIAlertViewUITests.m */; };
+		D2F2837D1D25390A002EE004 /* One_tableview_cell_model_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F2837C1D25390A002EE004 /* One_tableview_cell_model_ViewController.m */; };
+		D2F283861D253DEF002EE004 /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F283851D253DEF002EE004 /* MyTableViewCell.m */; };
+		D2F283891D2542F1002EE004 /* MyTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F283881D2542F1002EE004 /* MyTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +48,17 @@
 		D2F283571D2521CB002EE004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2F283591D2521CB002EE004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2F2835E1D2521CB002EE004 /* UIAlertViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIAlertViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2F283621D2521CB002EE004 /* UIAlertViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIAlertViewTests.m; sourceTree = "<group>"; };
-		D2F283641D2521CB002EE004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2F283691D2521CB002EE004 /* UIAlertViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIAlertViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F2836D1D2521CB002EE004 /* UIAlertViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIAlertViewUITests.m; sourceTree = "<group>"; };
 		D2F2836F1D2521CB002EE004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F2837B1D25390A002EE004 /* One_tableview_cell_model_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = One_tableview_cell_model_ViewController.h; sourceTree = "<group>"; };
+		D2F2837C1D25390A002EE004 /* One_tableview_cell_model_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = One_tableview_cell_model_ViewController.m; sourceTree = "<group>"; };
+		D2F2837E1D2539C9002EE004 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		D2F2837F1D253A8B002EE004 /* UIAlertView.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIAlertView.pch; sourceTree = "<group>"; };
+		D2F283841D253DEF002EE004 /* MyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
+		D2F283851D253DEF002EE004 /* MyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell.m; sourceTree = "<group>"; };
+		D2F283871D2542F1002EE004 /* MyTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableView.h; sourceTree = "<group>"; };
+		D2F283881D2542F1002EE004 /* MyTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				D2F283471D2521CB002EE004 /* UIAlertView */,
-				D2F283611D2521CB002EE004 /* UIAlertViewTests */,
 				D2F2836C1D2521CB002EE004 /* UIAlertViewUITests */,
 				D2F283461D2521CA002EE004 /* Products */,
 			);
@@ -101,6 +108,9 @@
 		D2F283471D2521CB002EE004 /* UIAlertView */ = {
 			isa = PBXGroup;
 			children = (
+				D2F283831D253DAC002EE004 /* controller */,
+				D2F283821D253DA6002EE004 /* view */,
+				D2F283811D253D99002EE004 /* model */,
 				D2F2834B1D2521CB002EE004 /* AppDelegate.h */,
 				D2F2834C1D2521CB002EE004 /* AppDelegate.m */,
 				D2F2834E1D2521CB002EE004 /* ViewController.h */,
@@ -110,6 +120,8 @@
 				D2F283561D2521CB002EE004 /* LaunchScreen.storyboard */,
 				D2F283591D2521CB002EE004 /* Info.plist */,
 				D2F283481D2521CB002EE004 /* Supporting Files */,
+				D2F2837B1D25390A002EE004 /* One_tableview_cell_model_ViewController.h */,
+				D2F2837C1D25390A002EE004 /* One_tableview_cell_model_ViewController.m */,
 			);
 			path = UIAlertView;
 			sourceTree = "<group>";
@@ -118,17 +130,10 @@
 			isa = PBXGroup;
 			children = (
 				D2F283491D2521CB002EE004 /* main.m */,
+				D2F2837E1D2539C9002EE004 /* Header.h */,
+				D2F2837F1D253A8B002EE004 /* UIAlertView.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D2F283611D2521CB002EE004 /* UIAlertViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				D2F283621D2521CB002EE004 /* UIAlertViewTests.m */,
-				D2F283641D2521CB002EE004 /* Info.plist */,
-			);
-			path = UIAlertViewTests;
 			sourceTree = "<group>";
 		};
 		D2F2836C1D2521CB002EE004 /* UIAlertViewUITests */ = {
@@ -138,6 +143,31 @@
 				D2F2836F1D2521CB002EE004 /* Info.plist */,
 			);
 			path = UIAlertViewUITests;
+			sourceTree = "<group>";
+		};
+		D2F283811D253D99002EE004 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		D2F283821D253DA6002EE004 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				D2F283841D253DEF002EE004 /* MyTableViewCell.h */,
+				D2F283851D253DEF002EE004 /* MyTableViewCell.m */,
+				D2F283871D2542F1002EE004 /* MyTableView.h */,
+				D2F283881D2542F1002EE004 /* MyTableView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		D2F283831D253DAC002EE004 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +301,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2F283501D2521CB002EE004 /* ViewController.m in Sources */,
+				D2F2837D1D25390A002EE004 /* One_tableview_cell_model_ViewController.m in Sources */,
 				D2F2834D1D2521CB002EE004 /* AppDelegate.m in Sources */,
 				D2F2834A1D2521CB002EE004 /* main.m in Sources */,
+				D2F283861D253DEF002EE004 /* MyTableViewCell.m in Sources */,
+				D2F283891D2542F1002EE004 /* MyTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +313,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2F283631D2521CB002EE004 /* UIAlertViewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = UIAlertView/UIAlertView.pch;
 				INFOPLIST_FILE = UIAlertView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chaojian.UIAlertView;
@@ -426,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = UIAlertView/UIAlertView.pch;
 				INFOPLIST_FILE = UIAlertView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chaojian.UIAlertView;
